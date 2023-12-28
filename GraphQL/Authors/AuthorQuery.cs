@@ -13,7 +13,7 @@ public class AuthorQuery
         => libraryDbContext.Authors;
 
     public async Task<Author> GetAuthorById(
-        int id,
+        [ID] int id,
         AuthorByIdDataLoader authorByIdDataLoader,
         CancellationToken cancellationToken)
         => await authorByIdDataLoader.LoadAsync(id, cancellationToken);

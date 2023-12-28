@@ -27,7 +27,8 @@ builder.Services.AddGraphQLServer()
     .AddDataLoader<AuthorByIdDataLoader>()
     .AddFiltering()
     .AddSorting()
-    .AddProjections();
+    .AddProjections()
+    .AddGlobalObjectIdentification();
 
 
 var app = builder.Build();

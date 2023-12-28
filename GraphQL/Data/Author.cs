@@ -4,6 +4,7 @@ namespace GraphQL.Data;
 
 public class Author
 {
+    [ID]
     public int Id{get; set;}
 
     [Required]

@@ -14,7 +14,7 @@ public class BookQuery
         => libraryDbContext.Books;
 
     public async Task<Book> GetBookById(
-        int id,
+        [ID] int id,
         BookByIdDataLoader bookByIdDataLoader,
         CancellationToken cancellationToken)
         => await bookByIdDataLoader.LoadAsync(id, cancellationToken);
