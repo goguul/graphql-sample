@@ -1,0 +1,16 @@
+﻿{
+  "errors": [
+    {
+      "message": "Expected a `Name`-token, but found a `RightParenthesis`-token.",
+      "locations": [
+        {
+          "line": 10,
+          "column": 17
+        }
+      ],
+      "extensions": {
+        "code": "HC0014"
+      }
+    }
+  ]
+}
